@@ -1,0 +1,73 @@
+$font-family: "Plus Jakarta Sans", sans-serif;
+$font-large: 4em;
+$font-medium: 2em;
+$font-small: 1em;
+
+$green: #2E8B57;
+$black: #121212;
+$font-color: #FFFFFF;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: $black;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  height: 50px;
+  width: 100%;
+  gap: 50px;
+  padding: 2em 4.4em;
+  overflow: hidden;
+}
+
+.header div {
+  cursor: pointer;
+}
+
+.header div img {
+  height: 20px;
+  width: 20px;
+  filter: invert(100%);
+}
+
+.visit-github {
+  display: flex;
+  background-color: $green;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.2em;
+}
+
+.nav div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+}
+
+.nav a {
+  font-family: $font-family;
+  font-size: $font-medium * 0.55;
+  color: $font-color;
+}
