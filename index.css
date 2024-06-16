@@ -1,12 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scrollbar-color: #2E8B57 #1f9b55;
 }
 
 body {
   height: 100%;
   width: 100%;
+  font-family: "Plus Jakarta Sans", sans-serif;
   background-color: #121212;
 }
 
@@ -37,7 +40,7 @@ body {
   background-color: #2E8B57;
   justify-content: center;
   align-items: center;
-  width: 60px;
+  width: 75px;
   height: 30px;
   border-radius: 5px;
 }
@@ -48,6 +51,9 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 2.2em;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .nav div {
@@ -59,8 +65,229 @@ body {
 
 .nav a {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #FFFFFF;
+}
+
+.who-am-i {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 8em 8em;
+  line-height: 1.8em;
+  height: 100vh;
+}
+
+.who-am-i img {
+  max-width: 450px;
+  max-height: 450px;
+}
+
+.who-am-i h2 {
+  font-size: 4em;
+  font-weight: 350;
+}
+
+.hobbies {
+  padding: 8em 8em;
+  height: 100vh;
+}
+
+.hobbies h3 {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 2em;
+  font-weight: 350;
+  margin-bottom: 2em;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-button {
+  background: #2E8B57;
+  border: none;
+  color: white;
+  font-size: 2em;
+  padding: 0.8em 1em;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.hobby-container {
+  overflow: hidden;
+  width: 100%;
+  padding: 0em 1.5em;
+}
+
+.hobby {
+  display: none;
+  justify-content: space-between;
+  color: #FFFFFF;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  gap: 3em;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.hobby.active {
+  display: flex;
+  opacity: 1;
+}
+
+.hobby img {
+  max-width: 450px;
+  max-height: 450px;
+}
+
+.heading {
+  color: #FFFFFF;
+  font-size: 4em;
+}
+
+.section-introduce {
+  color: #FFFFFF;
+  font-size: 3em;
+}
+
+.paragraph {
+  color: #FFFFFF;
+  font-size: 1.15em;
+}
+
+.colored-text {
+  color: #2E8B57;
+}
+
+.colored-text-2 {
+  color: #1f9b55;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.deactivate {
+  display: none;
+}
+
+.area {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.circles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 65px;
+  height: 65px;
+  background: rgba(255, 255, 255, 0.9);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 55px;
+  height: 55px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 90px;
+  height: 90px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 45px;
+  height: 45px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.6;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 10%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
