@@ -34,7 +34,7 @@
   <header class="header">
     <img src="https://via.placeholder.com/80x50.png/2E8B57" alt="Header Image"/>
     <nav class="nav">
-      <div>
+      <div id="nav-home">
         <img src="assets/home1.png" alt="Home" class="nav-link"/>
         <a>Home</a>
       </div>
@@ -42,77 +42,125 @@
         <img src="assets/about1.png" alt="Home" class="nav-link"/>
         <a>About</a>
       </div>
-      <div>
-        <img src="assets/projects1.png" alt="Home" class="nav-link"/>
+      <div id="nav-projects">
+        <img src="assets/projects1.png" alt="Projects" class="nav-link"/>
         <a>Projects</a>
       </div>
       <div>
         <img src="assets/resume1.png" alt="Home" class="nav-link"/>
         <a>Resume</a>
       </div>
-      <div class="visit-github nav-link">
-        <img src="assets/github.png" alt="github">
-      </div>
+      <a href="https://www.github.com/networksaphyra" target="_blank">
+        <div class="visit-github nav-link">
+          <img src="assets/github.png" alt="github">
+        </div>
+      </a>
     </nav>
   </header>
   <main>
-    <section class="who-am-i">
-      <div>
-        <h2 class="section-introduce"><span class="colored-text">Who</span> Am I?</h2>
-        <br>
-        <br>
-        <p class="paragraph">
-          Hi Everyone, I am <span class="colored-text">Mohak Kochhar</span> from <span class="colored-text">Kitchener, Ontario</span>.
+    <div class="home-page page">
+      <section class="who-am-i">
+        <div>
+          <h2 class="section-introduce"><span class="colored-text">Who</span> Am I?</h2>
           <br>
-          I am a high school student at Cameron Height C.I.
-        </p>
-        <br>
-        <p class="paragraph">
-          Apart from programming, some other activities that I love to do!
-        </p>
-      </div>
-      <img src="assets/programming-icon.png">
-    </section>
-
-    <section class="hobbies">
-      <h3>Apart from <span class="colored-text">Programming</span>, I also enjoy <span id="hobby-name">Chess</span></h3>
-      
-      <div class="carousel-container">
-        <button class="carousel-button prev">&lt;</button>
-        
-        <div class="hobby-container">
-          <div class="hobby active" data-hobby="chess">
-            <img src="https://via.placeholder.com/450x450.png/101010" alt="Chess"/> 
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt hendrerit erat, ac tempor elit iaculis fringilla. Aenean elit neque, sodales ut facilisis non, dictum ut massa. Quisque lacinia volutpat augue nec ultricies. Nam a faucibus lectus. Proin semper dapibus leo vitae sodales. Vivamus accumsan interdum elit vitae pulvinar. Aliquam sed laoreet erat. 
-              <br> <br>
-              Nam commodo, sem eu consequat eleifend, orci elit blandit risus, in tempus lorem nibh quis arcu. Ut laoreet finibus dapibus. Donec id felis fermentum, lobortis neque eget, suscipit purus. Curabitur faucibus pretium odio, ullamcorper dictum lorem condimentum eget. Etiam ut dictum turpis.
-            </p>
-          </div>
-    
-          <div class="hobby" data-hobby="speed-typing">
-            <img src="https://via.placeholder.com/450x450.png/202020" alt="Speed Typing"/> 
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt hendrerit erat, ac tempor elit iaculis fringilla. Aenean elit neque, sodales ut facilisis non, dictum ut massa. Quisque lacinia volutpat augue nec ultricies. Nam a faucibus lectus. Proin semper dapibus leo vitae sodales. Vivamus accumsan interdum elit vitae pulvinar. Aliquam sed laoreet erat. 
-              <br> <br>
-              Nam commodo, sem eu consequat eleifend, orci elit blandit risus, in tempus lorem nibh quis arcu. Ut laoreet finibus dapibus. Donec id felis fermentum, lobortis neque eget, suscipit purus. Curabitur faucibus pretium odio, ullamcorper dictum lorem condimentum eget. Etiam ut dictum turpis.
-            </p>
-          </div>
-    
-          <div class="hobby" data-hobby="soccer">
-            <img src="https://via.placeholder.com/450x450.png/303030" alt="Soccer"/> 
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt hendrerit erat, ac tempor elit iaculis fringilla. Aenean elit neque, sodales ut facilisis non, dictum ut massa. Quisque lacinia volutpat augue nec ultricies. Nam a faucibus lectus. Proin semper dapibus leo vitae sodales. Vivamus accumsan interdum elit vitae pulvinar. Aliquam sed laoreet erat. 
-              <br> <br>
-              Nam commodo, sem eu consequat eleifend, orci elit blandit risus, in tempus lorem nibh quis arcu. Ut laoreet finibus dapibus. Donec id felis fermentum, lobortis neque eget, suscipit purus. Curabitur faucibus pretium odio, ullamcorper dictum lorem condimentum eget. Etiam ut dictum turpis.
-            </p>
-          </div>
+          <br>
+          <p class="paragraph">
+            Hi Everyone, I am <span class="colored-text">Mohak Kochhar</span> from <span class="colored-text">Kitchener, Ontario</span>.
+            <br>
+            I am a high school student at Cameron Height C.I.
+          </p>
+          <br>
+          <p class="paragraph">
+            Apart from programming, some other activities that I love to do!
+          </p>
         </div>
-    
-        <button class="carousel-button next">&gt;</button>
-      </div>
-    </section>
-  </main>
+        <img src="assets/programming-icon.png">
+      </section>
+
+      <section class="hobbies">
+        <h3>Apart from <span class="colored-text">Programming</span>, I also enjoy <span id="hobby-name">Chess</span></h3>
+        <div class="hobby" data-hobby="chess">
+          <img src="https://via.placeholder.com/450x450.png/101010" alt="Chess"/> 
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt hendrerit erat, ac tempor elit iaculis fringilla. Aenean elit neque, sodales ut facilisis non, dictum ut massa. Quisque lacinia volutpat augue nec ultricies. Nam a faucibus lectus. Proin semper dapibus leo vitae sodales. Vivamus accumsan interdum elit vitae pulvinar. Aliquam sed laoreet erat. 
+            <br> <br>
+            Nam commodo, sem eu consequat eleifend, orci elit blandit risus, in tempus lorem nibh quis arcu. Ut laoreet finibus dapibus. Donec id felis fermentum, lobortis neque eget, suscipit purus. Curabitur faucibus pretium odio, ullamcorper dictum lorem condimentum eget. Etiam ut dictum turpis.
+          </p>
+        </div>
+
+        <div class="hobby" data-hobby="speed-typing">
+          <img src="https://via.placeholder.com/450x450.png/202020" alt="Speed Typing"/> 
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt hendrerit erat, ac tempor elit iaculis fringilla. Aenean elit neque, sodales ut facilisis non, dictum ut massa. Quisque lacinia volutpat augue nec ultricies. Nam a faucibus lectus. Proin semper dapibus leo vitae sodales. Vivamus accumsan interdum elit vitae pulvinar. Aliquam sed laoreet erat. 
+            <br> <br>
+            Nam commodo, sem eu consequat eleifend, orci elit blandit risus, in tempus lorem nibh quis arcu. Ut laoreet finibus dapibus. Donec id felis fermentum, lobortis neque eget, suscipit purus. Curabitur faucibus pretium odio, ullamcorper dictum lorem condimentum eget. Etiam ut dictum turpis.
+          </p>
+        </div>
+
+        <div class="hobby" data-hobby="soccer">
+          <img src="https://via.placeholder.com/450x450.png/303030" alt="Soccer"/> 
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt hendrerit erat, ac tempor elit iaculis fringilla. Aenean elit neque, sodales ut facilisis non, dictum ut massa. Quisque lacinia volutpat augue nec ultricies. Nam a faucibus lectus. Proin semper dapibus leo vitae sodales. Vivamus accumsan interdum elit vitae pulvinar. Aliquam sed laoreet erat. 
+            <br> <br>
+            Nam commodo, sem eu consequat eleifend, orci elit blandit risus, in tempus lorem nibh quis arcu. Ut laoreet finibus dapibus. Donec id felis fermentum, lobortis neque eget, suscipit purus. Curabitur faucibus pretium odio, ullamcorper dictum lorem condimentum eget. Etiam ut dictum turpis.
+          </p>
+        </div>
+      </section>
+    </div>
+    <div class="projects page active">
+      <h2>My Recent <span class="colored-text">Projects</span></h2>
+      <br>
+      <p>Here are some of the recent projects I've worked on.</p>
+
+      <section class="projects-container">
+        <div class="project">
+          <img src="https://via.placeholder.com/350x300.png/101010"/>
+          <h3>Sleepy Joe</h3>
+          <p>Sleepy Joe is the goatest project.</p>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/350x300.png/101010"/>
+          <h3>Sleepy Joe</h3>
+          <p>Sleepy Joe is the goatest project.</p>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/350x300.png/101010"/>
+          <h3>Sleepy Joe</h3>
+          <p>Sleepy Joe is the goatest project.</p>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/350x300.png/101010"/>
+          <h3>Sleepy Joe</h3>
+          <p>Sleepy Joe is the goatest project.</p>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/350x300.png/101010"/>
+          <h3>Sleepy Joe</h3>
+          <p>Sleepy Joe is the goatest project.</p>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/350x300.png/101010"/>
+          <h3>Sleepy Joe</h3>
+          <p>Sleepy Joe is the goatest project.</p>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/350x300.png/101010"/>
+          <h3>Sleepy Joe</h3>
+          <p>Sleepy Joe is the goatest project.</p>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/350x300.png/101010"/>
+          <h3>Sleepy Joe</h3>
+          <p>Sleepy Joe is the goatest project.</p>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/350x300.png/101010"/>
+          <h3>Sleepy Joe</h3>
+          <p>Sleepy Joe is the goatest project.</p>
+        </div>
+      </section>
+    </div>
+ </main>
   <script src="index.js"></script>
 </body>
 </html>
