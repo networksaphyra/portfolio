@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
   let pages = document.getElementsByClassName("page");
-
   function updateDocumentPage(activePage) {
     Array.from(pages).forEach(page => {
       page.classList.remove("active");
@@ -17,4 +16,48 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("nav-projects").addEventListener("click", function() {
     updateDocumentPage("projects");
   });
+
+  const hobbyTextContainer = document.querySelector(".hobby-text-container");
+  const hobbyHeading = document.getElementById("hobby-heading");
+  const hobbyName = document.getElementById("hobby-name");
+  const hobbyImage = document.getElementById("hobby-image");
+
+  const hobbyImages = ["chess.png", "soccer.png", "socializing.png"];
+
+  let lastScrollTop = 0;
+  let currentHobbyIndex = 0;
+  const hobbies = document.querySelectorAll(".hobby");
+
+  hobbyTextContainer.addEventListener("scroll", function() {
+    const st = hobbyTextContainer.scrollTop;
+    const direction = st > lastScrollTop ? "down" : "up";
+    lastScrollTop = st;
+
+    const containerHeight = hobbyTextContainer.clientHeight;
+    const scrollPosition = hobbyTextContainer.scrollTop;
+    const newIndex = Math.round(scrollPosition / containerHeight);
+
+    if (newIndex !== currentHobbyIndex) {
+      currentHobbyIndex = newIndex;
+      console.log(`Updating to hobby index: ${currentHobbyIndex}`);
+      updateHobbyDisplay(currentHobbyIndex);
+    }
+  });
+
+  function updateHobbyDisplay(index) {
+    const hobby = hobbies[index];
+    const hobbyData = hobby.getAttribute("data-hobby");
+    
+    hobbyName.style.opacity = 0;
+    hobbyImage.style.opacity = 0;
+  
+    setTimeout(() => {
+      hobbyName.textContent = hobbyData;
+      hobbyImage.src = `assets/${hobbyImages[index]}`;
+      
+      hobbyName.style.opacity = 1;
+      hobbyImage.style.opacity = 1;
+      console.log(`Updated hobby to: ${hobbyData}`);
+    }, 500);
+  }
 });

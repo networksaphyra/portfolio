@@ -78,6 +78,12 @@ body {
   align-items: center;
   gap: 8px;
   font-weight: 400;
+  transition: 0.2s all ease-in-out;
+}
+
+.nav div:hover {
+  text-decoration: underline;
+  text-decoration-color: #FFFFFF;
 }
 
 .nav a {
@@ -91,12 +97,12 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   padding: 12em 8em;
-  line-height: 1.8em;
   min-height: 100vh;
+  scroll-snap-type: start;
 }
 
 .who-am-i img {
-  max-width: 100%;
+  max-width: 512px;
   height: auto;
 }
 
@@ -121,20 +127,54 @@ body {
   margin-bottom: 2em;
 }
 
-.hobby {
+.hobbies-container {
   display: flex;
-  justify-content: space-between;
-  color: #FFFFFF;
-  font-size: 1.1em;
-  line-height: 1.8em;
   gap: 3em;
 }
 
-.hobby img {
-  max-width: 100%;
-  height: auto;
+.hobby-image-container {
+  flex: 0 0 400px;
 }
 
+#hobby-image {
+  width: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hobby-text-container {
+  flex: 1;
+  overflow-y: auto;
+  height: 500px;
+  scroll-snap-type: y mandatory;
+}
+
+.hobby {
+  scroll-snap-align: start;
+  height: 100%;
+  padding: 1em;
+}
+
+.hobby p {
+  color: #FFFFFF;
+  font-size: 1.1em;
+  line-height: 1.8em;
+}
+
+#hobby-name {
+  transition: opacity 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .hobbies-container {
+    flex-direction: column;
+  }
+  .hobby-image-container {
+    flex: 0 0 auto;
+  }
+  .hobby-text-container {
+    height: 300px;
+  }
+}
 .projects {
   padding: 10em 2em;
   text-align: center;
@@ -202,7 +242,7 @@ body {
 
 @media (max-width: 1200px) {
   .who-am-i, .hobbies {
-    padding: 8em 4em;
+    padding: 8em 2em;
   }
   .projects-container {
     padding: 2em 1em;
@@ -214,6 +254,9 @@ body {
 @media (max-width: 768px) {
   .header {
     padding: 1em 2em;
+  }
+  .who-am-i img {
+    max-width: 216px;
   }
   .nav {
     gap: 1em;

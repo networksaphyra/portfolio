@@ -58,8 +58,8 @@
     </nav>
   </header>
   <main>
-    <div class="home-page page">
-      <section class="who-am-i">
+    <div class="home-page page active">
+      <section class="who-am-i" id="who-am-i">
         <div>
           <h2 class="section-introduce"><span class="colored-text">Who</span> Am I?</h2>
           <br>
@@ -77,37 +77,34 @@
         <img src="assets/programming-icon.png">
       </section>
 
-      <section class="hobbies">
-        <h3>Apart from <span class="colored-text">Programming</span>, I also enjoy <span id="hobby-name">Chess</span></h3>
-        <div class="hobby" data-hobby="chess">
-          <img src="https://via.placeholder.com/450x450.png/101010" alt="Chess"/> 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt hendrerit erat, ac tempor elit iaculis fringilla. Aenean elit neque, sodales ut facilisis non, dictum ut massa. Quisque lacinia volutpat augue nec ultricies. Nam a faucibus lectus. Proin semper dapibus leo vitae sodales. Vivamus accumsan interdum elit vitae pulvinar. Aliquam sed laoreet erat. 
-            <br> <br>
-            Nam commodo, sem eu consequat eleifend, orci elit blandit risus, in tempus lorem nibh quis arcu. Ut laoreet finibus dapibus. Donec id felis fermentum, lobortis neque eget, suscipit purus. Curabitur faucibus pretium odio, ullamcorper dictum lorem condimentum eget. Etiam ut dictum turpis.
-          </p>
-        </div>
-
-        <div class="hobby" data-hobby="speed-typing">
-          <img src="https://via.placeholder.com/450x450.png/202020" alt="Speed Typing"/> 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt hendrerit erat, ac tempor elit iaculis fringilla. Aenean elit neque, sodales ut facilisis non, dictum ut massa. Quisque lacinia volutpat augue nec ultricies. Nam a faucibus lectus. Proin semper dapibus leo vitae sodales. Vivamus accumsan interdum elit vitae pulvinar. Aliquam sed laoreet erat. 
-            <br> <br>
-            Nam commodo, sem eu consequat eleifend, orci elit blandit risus, in tempus lorem nibh quis arcu. Ut laoreet finibus dapibus. Donec id felis fermentum, lobortis neque eget, suscipit purus. Curabitur faucibus pretium odio, ullamcorper dictum lorem condimentum eget. Etiam ut dictum turpis.
-          </p>
-        </div>
-
-        <div class="hobby" data-hobby="soccer">
-          <img src="https://via.placeholder.com/450x450.png/303030" alt="Soccer"/> 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt hendrerit erat, ac tempor elit iaculis fringilla. Aenean elit neque, sodales ut facilisis non, dictum ut massa. Quisque lacinia volutpat augue nec ultricies. Nam a faucibus lectus. Proin semper dapibus leo vitae sodales. Vivamus accumsan interdum elit vitae pulvinar. Aliquam sed laoreet erat. 
-            <br> <br>
-            Nam commodo, sem eu consequat eleifend, orci elit blandit risus, in tempus lorem nibh quis arcu. Ut laoreet finibus dapibus. Donec id felis fermentum, lobortis neque eget, suscipit purus. Curabitur faucibus pretium odio, ullamcorper dictum lorem condimentum eget. Etiam ut dictum turpis.
-          </p>
+      <section class="hobbies" id="hobbies">
+        <h3 id="hobby-heading">Apart from <span class="colored-text">Programming</span>, I love to <span id="hobby-name">Play Chess</span></h3>
+        <div class="hobbies-container">
+          <div class="hobby-image-container">
+            <img id="hobby-image" src="assets/chess.png" alt="Chess">
+          </div>
+          <div class="hobby-text-container">
+            <div class="hobby" data-hobby="Play Chess">
+              <p>
+                Chess has been a significant part of my life. I've achieved a peak rating of 2000 ELO on chess.com, which I'm quite proud of. I've participated in and won several chess tournaments at hackathons and local events. My next goal is to earn an official FIDE title, which I'm actively working towards. Chess continues to challenge me intellectually and strategically.
+              </p>
+            </div>
+            <div class="hobby" data-hobby="Play Soccer">
+              <p>
+                Soccer provides a welcome physical balance to my tech-focused activities. While I play casually, I find it an excellent way to stay active and maintain friendships. The sport offers a refreshing break from coding and allows me to enjoy some friendly competition and teamwork in a different context.
+              </p>
+            </div>
+            <div class="hobby" data-hobby="Attend Hackathons">
+              <p>
+                Hackathons are more than just coding events for me; they're opportunities to connect with like-minded individuals. I enjoy the collaborative atmosphere, where I can meet new people, exchange ideas, and work on innovative projects. These events have been instrumental in expanding my network within the tech community and have led to many valuable friendships and collaborations.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </div>
-    <div class="projects page active">
+
+    <div class="projects page">
       <h2>My Recent <span class="colored-text">Projects</span></h2>
       <br>
       <p>Here are some of the recent projects I've worked on.</p>
@@ -115,7 +112,7 @@
       <section class="projects-container">
         <div class="project">
           <img src="https://via.placeholder.com/350x300.png/101010"/>
-          <h3>Sleepy Joe</h3>
+          <h3>Sky Scope</h3>
           <p>Sleepy Joe is the goatest project.</p>
         </div>
         <div class="project">
@@ -163,4 +160,4 @@
  </main>
   <script src="index.js"></script>
 </body>
-</html>
+</html> 
