@@ -34,7 +34,7 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   backdrop-filter: blur(5px);
   height: 50px;
