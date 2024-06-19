@@ -123,6 +123,12 @@ body {
   font-weight: 350;
 }
 
+.who-am-i p {
+  max-width: 30em;
+  min-width: 15em;
+  margin-right: 5em;
+}
+
 .hobbies {
   display: flex;
   flex-direction: column;
@@ -145,6 +151,7 @@ body {
   padding: 1em 2.4em;
   display: flex;
   gap: 3em;
+  backdrop-filter: blur(5px); 
 }
 
 .hobby-image-container {
