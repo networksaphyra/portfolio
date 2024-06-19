@@ -10,12 +10,11 @@ $green-second: #1f9b55;
 $black: #121212;
 $font-color: #FFFFFF;
 
-// Main
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  scrollbar-color: $green $green-second;
+  scrollbar-color: $green $black;
 }
 
 body {
@@ -35,7 +34,7 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   backdrop-filter: blur(5px);
   height: 50px;
@@ -136,10 +135,13 @@ body {
   color: $font-color;
   font-size: $font-medium;
   font-weight: 350;
-  margin-bottom: 2em;
+  margin-bottom: 0.4em;
 }
 
 .hobbies-container {
+  border-radius: 2em;
+  border: solid $font-color 0.2em;
+  padding: 1em 2.4em;
   display: flex;
   gap: 3em;
 }
@@ -155,9 +157,10 @@ body {
 
 .hobby-text-container {
   flex: 1;
-  overflow-y: auto;
-  height: 500px;
+  overflow-y: scroll;
+  height: 400px;
   scroll-snap-type: y mandatory;
+  cursor: ns-resize;
 }
 
 .hobby {
@@ -242,6 +245,27 @@ body {
   font-size: $font-medium * 1.50;
 }
 
+.contact-me {
+  padding: 0em 2em;
+  h3 {
+    text-align: center;
+    color: $font-color;
+    font-size: $font-medium * 1.25;
+    font-weight: 350;
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    padding: 2em 2em;
+    gap: 2em;
+  }
+  img {
+    min-width: 2em;
+    max-width: 8em;
+  }
+}
+
+
 .paragraph {
   color: $font-color;
   font-size: $font-small * 1.15;
@@ -255,7 +279,6 @@ body {
   color: $green-second;
 }
 
-// Responsive design
 @media (max-width: 1200px) {
   .who-am-i, .hobbies {
     padding: 8em 2em;
@@ -325,8 +348,6 @@ body {
   }
 }
 
-// Miscellaneous
-
 .hide {
   visibility: hidden;
 }
@@ -335,7 +356,6 @@ body {
   display: none;
 }
 
-// Background
 .area {
   position: fixed;
   width: 100%;

@@ -3,7 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  scrollbar-color: #2E8B57 #1f9b55;
+  scrollbar-color: #2E8B57 #121212;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   backdrop-filter: blur(5px);
   height: 50px;
@@ -124,10 +124,13 @@ body {
   color: #FFFFFF;
   font-size: 2em;
   font-weight: 350;
-  margin-bottom: 2em;
+  margin-bottom: 0.4em;
 }
 
 .hobbies-container {
+  border-radius: 2em;
+  border: solid #FFFFFF 0.2em;
+  padding: 1em 2.4em;
   display: flex;
   gap: 3em;
 }
@@ -143,9 +146,10 @@ body {
 
 .hobby-text-container {
   flex: 1;
-  overflow-y: auto;
-  height: 500px;
+  overflow-y: scroll;
+  height: 400px;
   scroll-snap-type: y mandatory;
+  cursor: ns-resize;
 }
 
 .hobby {
@@ -225,6 +229,26 @@ body {
 .section-introduce {
   color: #FFFFFF;
   font-size: 3em;
+}
+
+.contact-me {
+  padding: 0em 2em;
+}
+.contact-me h3 {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 2.5em;
+  font-weight: 350;
+}
+.contact-me div {
+  display: flex;
+  justify-content: center;
+  padding: 2em 2em;
+  gap: 2em;
+}
+.contact-me img {
+  min-width: 2em;
+  max-width: 8em;
 }
 
 .paragraph {

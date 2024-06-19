@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
     updateDocumentPage("projects");
   });
 
+  document.getElementById("")
+
   const hobbyTextContainer = document.querySelector(".hobby-text-container");
   const hobbyHeading = document.getElementById("hobby-heading");
   const hobbyName = document.getElementById("hobby-name");
