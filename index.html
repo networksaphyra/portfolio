@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="A portfolio">
   <meta name="author" content="Mohak Kochhar">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css"/>
-
+  <link rel="stylesheet" href="index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link ref="preconnect" href="https://via.placeholder.com">
-
+  <link rel="preconnect" href="https://via.placeholder.com">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-
   <title>Mohak Kochhar | Portfolio</title>
 </head>
+
 <body>
   <div class="area">
     <ul class="circles">
@@ -32,34 +31,34 @@
   </div>
 
   <header class="header">
-    <!-- <img src="https://via.placeholder.com/80x50.png/2E8B57" alt="Header Image"/> -->
+    <img src="https://via.placeholder.com/80x50.png/2E8B57" alt="Header Image">
     <nav class="nav">
       <div id="nav-home">
-        <img src="assets/home1.png" alt="Home" class="nav-link"/>
-        <a>Home</a>
+        <img src="assets/home1.png" alt="Home" class="nav-link">
+        <a href="#">Home</a>
       </div>
       <div id="nav-projects">
-        <img src="assets/projects1.png" alt="Projects" class="nav-link"/>
-        <a>Projects</a>
+        <img src="assets/projects1.png" alt="Projects" class="nav-link">
+        <a href="#">Projects</a>
       </div>
-      <div>
-        <img src="assets/resume1.png" alt="Home" class="nav-link"/>
-        <a>Resume</a>
-      </div>
-      <a href="https://www.github.com/networksaphyra" target="_blank">
-        <div class="visit-github nav-link">
-          <img src="assets/github.png" alt="github">
+      <!-- <div>
+        <img src="assets/resume1.png" alt="Resume" class="nav-link">
+        <a href="#">Resume</a>
+      </div> -->
+      <a href="https://www.github.com/networksaphyra" target="_blank" class="nav-link">
+        <div class="visit-github">
+          <img src="assets/github.png" alt="GitHub">
         </div>
       </a>
     </nav>
   </header>
+
   <main>
     <div class="home-page page active">
       <section class="who-am-i" id="who-am-i">
         <div>
           <h2 class="section-introduce"><span class="colored-text">Who</span> Am I?</h2>
-          <br>
-          <br>
+          <br><br>
           <p class="paragraph">
             Hi Everyone, I am <span class="colored-text">Mohak Kochhar</span> from <span class="colored-text">Kitchener, Ontario</span>.
             <br>
@@ -70,7 +69,7 @@
             Apart from programming, some other activities that I love to do!
           </p>
         </div>
-        <img src="assets/programming-icon.png">
+        <img src="assets/programming-icon.png" alt="Programming Icon">
       </section>
 
       <section class="hobbies" id="hobbies">
@@ -82,7 +81,7 @@
           <div class="hobby-text-container">
             <div class="hobby" data-hobby="Play Chess">
               <p>
-                Chess has been a significant part of my life. I've achieved a peak rating of 2000 ELO on chess.com, which I'm quite proud of. I've participated in and won several chess tournaments at hackathons and local events. My next goal is to earn an official FIDE title, which I'm actively working towards. 
+                Chess has been a significant part of my life. I've achieved a peak rating of 2000 ELO on chess.com, which I'm quite proud of. I've participated in and won several chess tournaments at hackathons and local events. My next goal is to earn an official FIDE title, which I'm actively working towards.
               </p>
             </div>
             <div class="hobby" data-hobby="Play Soccer">
@@ -98,15 +97,16 @@
           </div>
         </div>
       </section>
+
       <section class="contact-me">
         <h3>REACH ME THROUGH</h3>
         <div>
-          <a target=_blank href="https://www.instagram.com/mohak_______/">
-            <img src="assets/instagram.png" alt="Instagram"/>
-          </a> 
-          <a target=_blank href="https://www.github.com/networksaphyra">
-            <img src="assets/github2.png" alt="Github"/>
-          </a> 
+          <a href="https://www.instagram.com/mohak_______/" target="_blank">
+            <img src="assets/instagram.png" alt="Instagram">
+          </a>
+          <a href="https://www.github.com/networksaphyra" target="_blank">
+            <img src="assets/github2.png" alt="GitHub">
+          </a>
         </div>
       </section>
     </div>
@@ -118,74 +118,159 @@
 
       <section class="projects-container">
         <div class="project">
-          <img src="assets/skyscope.jpeg"/>
+          <img src="assets/sky-scope.png" alt="Sky Scope">
           <h3>Sky Scope</h3>
           <p>
             An automated telescope that can locate and track celestial objects, eliminating manual adjustments. It integrates with a celestial database containing coordinates for stars, planets and other space objects. Users select viewing targets through a web app which calculates their real-time positions based on the user's location.
           </p>
+          <div class="project-links">
+            <a href="https://github.com/networksaphyra/SkyScope" target="_blank">
+              <img src="assets/github2.png" alt="GitHub">
+            </a>
+            <a href="https://www.youtube.com/watch?v=CmvtFA55fYE" target="_blank">
+              <img src="assets/youtube.png" alt="YouTube">
+            </a>
+          </div>
         </div>
+
         <div class="project">
-          <img src="https://via.placeholder.com/350x300.png/101010"/>
+          <img src="assets/the-judge.png" alt="The Judge">
           <h3>The Judge</h3>
           <p>
-            An intelligent grading assistant for computer science projects. The Judge uses natural language processing models like GPT to analyze and provide feedback on submitted code, documentation and requirements across different programming languages. Students and instructors submit projects through a web interface built with HTML, CSS, and Javascript.
+            An intelligent grading assistant for computer science projects. The Judge uses natural language processing models like GPT to analyze and provide feedback on submitted code.
           </p>
+          <div class="project-links">
+            <a href="https://github.com/networksaphyra/the-judge" target="_blank">
+              <img src="assets/github2.png" alt="GitHub">
+            </a>
+            <a href="https://devpost.com/software/the-judge-pov8b2" target="_blank">
+              <img src="assets/devpost.svg" alt="Devpost">
+            </a>
+          </div>
         </div>
+
         <div class="project">
-          <img src="assets/project-astraeus.png"/>
+          <img src="assets/project-astraeus.png" alt="Project Astraeus">
           <h3>Project Astraeus Website</h3>
           <p>
             A comprehensive website for the non-profit Project Astraeus which runs STEM education initiatives. The site design emphasizes clear navigation to information on their future goals, workshops and resources for getting youth engaged with engineering.
           </p>
+          <div class="project-links">
+            <a href="https://github.com/networksaphyra/website" target="_blank">
+              <img src="assets/github2.png" alt="GitHub">
+            </a>
+            <a href="https://www.projectastraeus.org" target="_blank">
+              <img src="assets/link.png" alt="Link">
+            </a>
+          </div>
         </div>
+
         <div class="project">
-          <img src="https://via.placeholder.com/350x300.png/101010"/>
+          <img src="assets/smart-sprout.png" alt="Smart Sprout">
           <h3>Smart Sprout</h3>
           <p>
             An automated plant watering system that ensures your plants never go thirsty. Smart Sprout uses calibrated moisture sensors inserted into planters to closely monitor soil conditions. It then automatically dispenses precise levels of water to each plant only when needed. Smart Sprout's integrated pump and tubing efficiently distributes water while an LED display is used to keep the user informed about the moisture.
           </p>
+          <div class="project-links">
+            <a href="https://github.com/networksaphyra/smart-sprout" target="_blank">
+              <img src="assets/github2.png" alt="GitHub">
+            </a>
+            <a href="https://devpost.com/software/smart-sprout-ponbhq" target="_blank">
+              <img src="assets/devpost.svg" alt="Devpost">
+            </a>
+            <a href="https://www.youtube.com/watch?v=6CKtqVd9TzE" target="_blank">
+              <img src="assets/youtube.png" alt="YouTube">
+            </a>
+          </div>
         </div>
+
         <div class="project">
-          <img src="https://via.placeholder.com/350x300.png/101010"/>
+          <img src="assets/sleepy-joe.jpeg" alt="Sleepy Joe">
           <h3>Sleepy Joe</h3>
           <p>
-            A web-based conversational app designed to help users fall asleep more easily. Sleepy Joe lets you interact with an AI model that can write and narrate custom bedtime stories tailored to your preferences. You can also ask it to display calming images of itself sleeping or play soothing audio tracks and ambient sleepy sounds. 
+            A web-based conversational app designed to help users fall asleep more easily. Sleepy Joe lets you interact with an AI model that can write and narrate custom bedtime stories tailored to your preferences. You can also ask it to display calming images of itself sleeping or play soothing audio tracks and ambient sleepy sounds.
           </p>
+          <div class="project-links">
+            <a href="https://github.com/networksaphyra/sleepy-joe" target="_blank">
+              <img src="assets/github2.png" alt="GitHub">
+            </a>
+            <a href="https://devpost.com/software/sleepy-joe" target="_blank">
+              <img src="assets/devpost.svg" alt="Devpost">
+            </a>
+            <a href="https://www.youtube.com/watch?v=7pC1bX0o4Pw" target="_blank">
+              <img src="assets/youtube.png" alt="YouTube">
+            </a>
+          </div>
         </div>
+
         <div class="project">
-          <img src="https://via.placeholder.com/350x300.png/101010"/>
+          <img src="assets/portfolio.png" alt="Portfolio Site">
           <h3>Portfolio Site</h3>
           <p>
-            A clean and modern website showcasing my projects, skills, and experience as a developer. 
+            A clean and modern website showcasing my projects, skills, and experience as a developer.
           </p>
+          <div class="project-links">
+            <a href="https://github.com/networksaphyra/portfolio" target="_blank">
+              <img src="assets/github2.png" alt="GitHub">
+            </a>
+            <a href="https://www.networksaphyra.github.com/portfolio" target="_blank">
+              <img src="assets/link.png" alt="Link">
+            </a>
+          </div>
         </div>
+
         <div class="project">
-          <img src="https://via.placeholder.com/350x300.png/101010"/>
+          <img src="assets/chess2.png" alt="Chess">
           <h3>Chess</h3>
           <p>
-            A classic chess game you can play locally against friends or a computer. Built using Pygame, the clean graphical interface allows you to click and drag pieces across the virtual board.  Working on adding features that include the ability to undo moves, allow playing across networks, and save/load game states.
+            A classic chess game you can play locally against friends or a computer. Built using Pygame, the clean graphical interface allows you to click and drag pieces across the virtual board. Working on adding features that include the ability to undo moves, allow playing across networks, and save/load game states.
           </p>
+          <div class="project-links">
+            <a href="https://github.com/networksaphyra/chess-without-en-passant" target="_blank">
+              <img src="assets/github2.png" alt="GitHub">
+            </a>
+          </div>
         </div>
+
         <div class="project">
-          <img src="https://via.placeholder.com/350x300.png/101010"/>
+          <img src="assets/alice-in-quizzland.png" alt="Alice in Quizzland">
           <h3>Alice in Quizzland</h3>
           <p>
             A web app for creating and taking quizzes on any topic. Build custom quizzes by adding multiple choice, true/false, short answer questions and more. Take quizzes and get comprehensive results showing your performance. Built using React, Node.js and MongoDB.
           </p>
+          <div class="project-links">
+            <a href="https://github.com/networksaphyra/alice-in-quizzland" target="_blank">
+              <img src="assets/github2.png" alt="GitHub">
+            </a>
+            <a href="https://devpost.com/software/alice-in-quizzland" target="_blank">
+              <img src="assets/devpost.svg" alt="Devpost">
+            </a>
+            <a href="https://www.youtube.com/watch?v=MeLrJ-Cev4o" target="_blank">
+              <img src="assets/youtube.png" alt="YouTube">
+            </a>
+          </div>
         </div>
+
         <div class="project">
-          <img src="https://via.placeholder.com/350x300.png/101010"/>
+          <img src="assets/sketcher.png" alt="Sketcher">
           <h3>Sketcher</h3>
           <p>
-            A browser-based pixel art drawing tool. Create digital pixel artworks directly in your web browser using a simple and intuitive drawing interface. Sketcher provides a variety of tools like pencils, buckets, color pickers to help you construct detailed pixel art images. 
+            A browser-based pixel art drawing tool. Create digital pixel artworks directly in your web browser using a simple and intuitive drawing interface. Sketcher provides a variety of tools like pencils, buckets, color pickers to help you construct detailed pixel art images.
           </p>
+          <div class="project-links">
+            <a href="https://github.com/networksaphyra/sketcher" target="_blank">
+              <img src="assets/github2.png" alt="GitHub">
+            </a>
+            <a href="https://networksaphyra.github.io/sketcher/" target="_blank">
+              <img src="assets/link.png" alt="Link">
+            </a>
+          </div>
         </div>
       </section>
     </div>
-    <div id="">
+  </main>
 
-    </div>
- </main>
   <script src="index.js"></script>
 </body>
-</html> 
+
+</html>

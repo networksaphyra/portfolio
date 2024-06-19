@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+
   let pages = document.getElementsByClassName("page");
   function updateDocumentPage(activePage) {
     Array.from(pages).forEach(page => {
@@ -9,15 +11,30 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
+  function saveCurrentPage(activePage) {
+    localStorage.setItem("currentPage", activePage);
+  }
+
+  function loadLastPage() {
+    const lastPage = localStorage.getItem("currentPage");
+    if (lastPage) {
+      updateDocumentPage(lastPage);
+    } else {
+      updateDocumentPage("home-page");
+    }
+  }
+
+  loadLastPage();
+
   document.getElementById("nav-home").addEventListener("click", function() {
     updateDocumentPage("home-page");
+    saveCurrentPage("home-page");
   });
-
+  
   document.getElementById("nav-projects").addEventListener("click", function() {
     updateDocumentPage("projects");
+    saveCurrentPage("projects");
   });
-
-  document.getElementById("")
 
   const hobbyTextContainer = document.querySelector(".hobby-text-container");
   const hobbyHeading = document.getElementById("hobby-heading");
