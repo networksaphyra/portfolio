@@ -222,6 +222,7 @@ body {
   max-width: 1800px; 
   margin: 0 auto;
   border-radius: 2em;
+  backdrop-filter: blur(10px);
 }
 
 .project {
@@ -237,6 +238,7 @@ body {
   min-height: 550px;
   margin: 1em 0;
   position: relative;
+  backdrop-filter: blur(10px);
 }
 
 .project img {
@@ -363,6 +365,7 @@ body {
 
   .project {
     width: 100%;
+    backdrop-filter: blur(10px);
   }
 
   .nav {
