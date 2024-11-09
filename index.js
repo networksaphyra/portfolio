@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-
+  alert("Please use a desktop while viewing this, I still haven't ported it to mobile 😅.")
   let pages = document.getElementsByClassName("page");
   function updateDocumentPage(activePage) {
     Array.from(pages).forEach(page => {
